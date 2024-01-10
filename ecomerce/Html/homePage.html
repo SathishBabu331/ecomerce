@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipzon-Home</title>
+    <link rel="stylesheet" href="../Css/homePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../javaScript/homePage.js"></script>
+</head>
+<body>
+    <div id="loading">
+        <div id="loadingText">
+            <span class="loadingLetters" id="F">F</span>
+            <span class="loadingLetters" id="L">L</span>
+            <span class="loadingLetters" id="I">I</span>
+            <span class="loadingLetters" id="P">P</span>
+            <span class="loadingLetters" id="Z">Z</span>
+            <span class="loadingLetters" id="O">O</span>
+            <span class="loadingLetters" id="N">N</span>
+        </div>
+        <div id="loadingBar"></div>
+    </div>
+    <div id="webpageBody">
+        <nav>
+            <img src="../Asset/images/logo.png" id="logo" alt="">
+            <div id="dropandsearch">
+                <div id="dropdown">
+                     <ul id="mainlist">
+                        <li id="liofmain">All <i class="fa-solid fa-caret-down fa-shake"></i> 
+                            <ul id="sublist">
+                                <li class="sli">Electronics</li>
+                                <li class="sli">Clothing</li>
+                                <li class="sli">HomeProducts</li>
+                                <li class="sli">Groceries</li>
+                                <li class="sli">Toys</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="search">
+                    <div id="input">
+                        <input type="text" id="searchInput" placeholder="search here!">
+                        <i class="fa-solid fa-magnifying-glass fa-shake" id="searchIcon"></i>
+                    </div>
+                </div>
+            </div>
+            <a href="../Html/login.html">
+                <div id="Login">
+                    Login
+                </div>
+            </a>
+            <a href="#">
+                <div id="cart">
+                  cart
+                </div>
+            </a>
+            <a id="count" href=""><div>1</div></a>
+        </nav>
+    </div>
+
+    <!-- slide buttons -->
+    <header>
+        <div id="rightSlide"><h1><</h1></div>
+        <div id="leftSlide"><h1>></h1></div>
+    </header>
+
+    
+    <!-- <div id="absolute">
+        <h2>CONTACT DETAILS</h2>
+        Contact-Number:6303538860 <br>
+        Email-Id:parimivinod7860@gmail.com <br>
+        Address:JSpiders,Opp Jntu University,Hyderabad <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d696.2438608372405!2d78.39461396664058!3d17.49553190803721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f27c515315%3A0xb48086bdd1bb34d6!2sJSpiders%20Hyderabad%20JNTU!5e0!3m2!1sen!2sin!4v1695363790659!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="relative">
+        </div>
+    </div> -->
+    <div id="catageryContainer" >
+        <div class="subcontainer" id="cloths">
+          <img class="cloths" id="jeans"  src="../Asset/images/jeans.png">
+          <img class="cloths" id="shirt" src="../Asset/images/shirt.png">
+          <h1 id="cloths">Cloths</h1>
+          <img class="cloths" id="pants" src="../Asset/images/pants.png">
+          <img class="cloths" id="hoddie" src="../Asset/images/hoddie.png">
+        </div>
+        <div class="subcontainer" id="electronics">
+          <img class="electronics" id="headphone"  src="../Asset/images/headphone.png">
+          <img class="electronics" id="phone"  src="../Asset/images/phone.png">
+          <h1 id="electronics">Electronics</h1>
+          <img class="electronics" id="tab"  src="../Asset/images/tab.png">
+          <img class="electronics" id="laptop"  src="../Asset/images/laptop.png">
+        </div>
+        <div class="subcontainer" id="toys">
+              <img class="toys" id="toy1"  src="../Asset/images/toy1.png">
+              <img class="toys" id="toy2" src="../Asset/images/toy2.png">
+              <h1 id="toys">Toys</h1>
+              <img class="toys" id="toy3" src="../Asset/images/toy3.png">
+              <img class="toys" id="toy4" src="../Asset/images/toy4.png">
+        </div>
+</div>
+<div id="productContainer">
+  <div class="products">
+      <img src="../Asset/images/t1.png" alt="" class="productImage">
+      <h1>999 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/t2.png" alt="" class="productImage">
+      <h1>899 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/t3.png" alt="" class="productImage">
+      <h1>1000 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/toy6.png" alt="" class="productImage">
+      <h1>500 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/toy5.png" alt="" class="productImage">
+      <h1>799 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/h1.png" alt="" class="productImage">
+      <h1>7599 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/s1.png" alt="" class="productImage">
+      <h1>1799 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/s2.png" alt="" class="productImage">
+      <h1>2000 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/sp1.png" alt="" class="productImage">
+      <h1>9999 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/ac.png" alt="" class="productImage">
+      <h1>39999 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/tab.png" alt="" class="productImage">
+      <h1>55999 Rs</h1>
+      <input type="button" value="Add cart">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/toy2.png" alt="" class="productImage">
+      <h1>699 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/toy3.png" alt="" class="productImage">
+      <h1>999 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/hoddie.png" alt="" class="productImage">
+      <h1>1999 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/smartwatch.png" alt="" class="productImage">
+      <h1>26999 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+  <div class="products">
+      <img src="../Asset/images/airpod.png" alt="" class="productImage">
+      <h1>16999 Rs</h1>
+      <input type="button" value="Add cart" onclick="addCart()">
+  </div>
+</div>
+</div>
+    <div id="downScroll"></div>
+</body>
+</html>
